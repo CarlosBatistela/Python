@@ -4,12 +4,13 @@ votos = []
 
 
 def cadastrar():
-    quantidade = int(input("Quantas opções deseja cadastrar? "))
+    mais = "s"
 
-    for i in range(quantidade):
-        nome = input("Digite a opção " + str(i + 1) + ": ")
+    while mais == "s":
+        nome = input("Digite a opção: ")
         opcoes.append(nome)
         votos.append(0)
+        mais = input("quer cadastrar mais uma? [s/n]: ")
 
     print("Opções cadastradas!")
     input("\nPressione ENTER para voltar ao menu...")
@@ -30,15 +31,16 @@ def votar():
     for i in range(len(opcoes)):
         print(i + 1, "-", opcoes[i])
 
-    quantidade = int(input("\nQuantos votos deseja registrar? "))
-
-    for i in range(quantidade):
-        numero = int(input("Voto " + str(i + 1) + " - escolha: "))
+    continuar =  "s"
+    while continuar == "s":
+        numero = int(input("escolha: "))
 
         if numero >= 1 and numero <= len(opcoes):
             votos[numero - 1] = votos[numero - 1] + 1
         else:
             print("Opção inválida!")
+
+        continuar = input("\nvotar de novo? [s/n]: ")
 
     print("\nVotos registrados!")
     input("\nPressione ENTER para voltar ao menu...")
