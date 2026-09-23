@@ -20,7 +20,7 @@ match media:
         print("Nota ruim")
     case i if 5 > i:
         print("Pessima nota")
-if match >= 6:
-    print(Aprovado)
+if media >= 6:
+    print("Aprovado")
 else :
-    print(Reprovado)
+    print("Reprovado")
