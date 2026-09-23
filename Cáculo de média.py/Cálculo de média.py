@@ -1,4 +1,4 @@
-aluno = input("Aluno: ")
+materia = input("matéria: ")
 qtn = int(input("Quantas notas: "))
 notas = []
 for i in range (qtn):
@@ -21,6 +21,6 @@ match media:
     case i if 5 > i:
         print("Pessima nota")
 if media >= 6:
-    print("Aprovado")
+    print(f"Aprovado em {materia} com uma média de {media}")
 else :
-    print("Reprovado")
+    print(f"Reprovado em {materia} com uma média de {media}")
