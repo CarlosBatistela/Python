@@ -1,23 +1,3 @@
-nome = input("nome: ")
-salario = float(input("salario: "))
-Nsalario = 0
-dep = int(input("dependentes: "))
-match dep:
-    case 0:
-        Nsalario = salario+(salario*5/100)
-        print(Nsalario)
-    case 1|2|3:
-         Nsalario = salario+(salario*10/100)
-         print(f"seu novo sálario é R${Nsalario}")
-    case 4|5|6:
-        Nsalario = salario+(salario*15/100)
-        print(f"seu novo sálario é R${Nsalario}")
-    case x if x > 6:
-        Nsalario = salario+(salario*10/100)
-        print(f"seu novo sálario é R${Nsalario}")
-
-...
-
 aluno = input("Aluno: ")
 qtn = int(input("Quantas notas: "))
 notas = []
