@@ -2,11 +2,11 @@ import random
 aux = 0
 lista = []
 ordlista = []
-for i in range(5):
+TmLista = int(input("Quantos números vai ter na lista: "))
+for i in range(TmLista):
     lista.append(random.randint(1,100))
     
-print(lista)
-print("----------------")
+print(f"'''{lista}'''\n")
 
 for p1 in range(len(lista)-1):
     for p2 in range(p1+1, len(lista)):
