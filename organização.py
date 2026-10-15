@@ -13,8 +13,8 @@ for p1 in range(len(lista)-1):
             aux = lista[p1]
             lista[p1] = lista[p2]
             lista[p2] = aux
-        print(lista)
-        print("----------------")
+            print(lista)
+            print("----------------")
 
 print(f"\nlista ordenada = {lista} ")
 
